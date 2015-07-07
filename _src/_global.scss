@@ -1,0 +1,16 @@
+html, body {
+	height: 100%;
+}
+
+.section {
+	@extend .block;
+	padding: s(m) 0;
+
+	@media (min-height: break(s)){
+		padding: s(xl) 0;
+	}
+}
+.section__full {
+	@extend .section;
+	height: 100%;
+}
