@@ -19,8 +19,8 @@ social_dribbble: "#0"
 # JEKYLL - Misc
 #
 # Web Server Settings
-url: "http://localhost:4000"
-# url: "http://estrattonbailey.com/Nominal" # Change this to match your domain name
+# url: "http://localhost:4000"
+url: "http://estrattonbailey.com/Nominal" # Change this to match your domain name
 
 # Hide these files from jekyll build process.
 exclude: [README.md]
