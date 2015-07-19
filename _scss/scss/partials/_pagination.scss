@@ -1,0 +1,12 @@
+.pagination {
+	padding: s(m) 0;
+}
+.page__prev, .page__next, .page__num {
+	width: 80px;
+}
+.page__prev, .page__next {
+	@extend .trans-o-s;
+	&:hover {
+		opacity: .6;
+	}
+}

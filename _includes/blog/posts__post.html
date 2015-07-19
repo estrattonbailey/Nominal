@@ -1,0 +1,6 @@
+<article class="posts__post block col">
+	<time class="h5 c-theme font-w-9" datetime="{{ page.date | date: '%Y-%m-%d' }}"> {{ post.date | date: '%B %d, %Y' }}</time>
+	<h2 class="block__title h1"><a class="post__link" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><span class="post__status">• </span>{{ post.title }}</a></h2>
+	<div class="post__excerpt s1 s34_m s23_xl">{{ post.excerpt }}</div>
+	<span class="block__spacer bg-c-w"></span>
+</article>

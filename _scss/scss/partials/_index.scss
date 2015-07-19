@@ -1,0 +1,54 @@
+.hero__table {
+	min-height: 300px;
+}
+.hero__pre {
+	margin-bottom: s(s);
+}
+.hero__desc {
+	margin-top: s(m);
+}
+
+// SOCIAL
+.social {
+	background-color: color(theme);
+	@media (min-width: break(s)){
+		background-color: white;
+		height: 0;
+	}
+}
+.social__links {
+	@extend .s1;
+	@extend .u-inline-helper;
+	bottom: 100%;
+	height: 60px;
+	list-style: none;
+	position: relative;
+	text-align: left;
+	@media (min-width: break(s)){
+		border-left: 2px solid white;
+		color: color(g2);
+		position: absolute;
+	}
+}
+.social__link {
+	@extend .inline-block;
+	a {
+		@extend .trans-c-s;
+		line-height: 60px;
+		width: 60px;
+		&:hover {
+			color: rgba(white, .6);
+		}
+		@media (min-width: break(s)){
+			text-align: center;
+			&:hover {
+				color: color(theme);
+			}
+		}
+	}
+}
+
+// WORK
+.work__block {
+	margin: s(l) 0;
+}

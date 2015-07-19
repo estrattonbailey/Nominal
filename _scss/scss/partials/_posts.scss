@@ -1,0 +1,24 @@
+.posts__post {
+	margin: s(l) 0;
+
+	time {
+		@extend .block-relative;
+		margin-bottom: s(s);
+	}
+}
+.post__link {
+	&:visited {
+		.post__status {
+			color: color(g1);
+		}
+	}
+}
+.post__status {
+	@extend .absolute;
+	left: -25px;
+}
+.post__excerpt {
+	h1, h2, h3, h4, h5, h6 {
+		@extend .p;
+	}
+}
