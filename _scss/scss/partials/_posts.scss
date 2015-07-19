@@ -16,9 +16,13 @@
 .post__status {
 	@extend .absolute;
 	left: -25px;
+	@media (max-width: break(xs)){
+		display: none;
+	}
 }
 .post__excerpt {
 	h1, h2, h3, h4, h5, h6 {
 		@extend .p;
+		max-width: 40em;
 	}
 }

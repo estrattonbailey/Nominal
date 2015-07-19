@@ -10,17 +10,17 @@ site_keywords: 'responsive, minimal, jekyll theme, clean, fast, elegant, design,
 # CUSTOMIZE 
 color_theme: nominal # only one theme right now, sry
 # SOCIAL
-social_twitter: http://twitter.com/estrattonbailey
-social_instagram: http://instagram.com/estrattonbailey
-social_github: http://github.com/estrattonbailey
-social_dribbble: http://dribbble.com/estrattonbailey
+social_twitter: "#0"
+social_instagram: "#0"
+social_github: "#0"
+social_dribbble: "#0"
 
 
 # JEKYLL - Misc
 #
 # Web Server Settings
-# url: "http://localhost:4000"
-url: "http://estrattonbailey.com/Nominal" # Change this to match your domain name
+url: "http://localhost:4000"
+# url: "http://estrattonbailey.com/Nominal" # Change this to match your domain name
 
 # Hide these files from jekyll build process.
 exclude: [README.md]
