@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<section class="section--full bg-c-g1">
+	<div class="grid--m">
+		<div class="row">
+			<div class="section__title block"><h2 class="h4 font-w-9 c-g2"><a href="{{ site.url }}" class="c-theme">HOME</a> / WORDS</h2></div>
+			{% for post in paginator.posts %}
+				{% include blog/posts__post.html %}
+			{% endfor %}
+		</div>
+	</section>
+</section>

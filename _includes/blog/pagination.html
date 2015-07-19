@@ -1,0 +1,21 @@
+{% if paginator.total_pages > 1 %}
+<div class="pagination h4 c-theme bg-c-w align-c block row">
+  {% if paginator.previous_page %}
+   {% if paginator.previous_page == 1 %}
+      <a href="{{site.url}}/{{site.permalink_base}}" class="page__prev inline-relative"><i class="icon-arrow-left"></i></a>
+    {% else %}
+      <a href="{{ paginator.previous_page_path }}" class="page__prev inline-relative"><i class="icon-arrow-left"></i></a>
+    {% endif %}
+  {% else %}
+    <div class="page__prev inline-relative">&nbsp;</div>
+  {% endif %}
+
+  <div class="page__num inline-relative">{{ paginator.page }} / {{ paginator.total_pages }}</div>
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="page__next inline-relative"><i class="icon-arrow-right"></i></a>
+  {% else %}
+    <div class="page__next inline-relative">&nbsp;</div>
+  {% endif %}
+</div>
+{% endif %}

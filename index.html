@@ -1,9 +1,63 @@
 ---
 layout: default
 ---
-<div class="section__full">
-  <div class="grid--m">
-   <h1 class="h4">Eric Bailey</h1>
-   <h1 class="h0">Designer and Developer</h1>
-  </div>
-</div>
+<section class="hero section bg-c-g1">
+	<div class="grid--m">
+		<div class="hero__table table">
+			<div class="table__cell">
+				<h1 class="hero__pre h4 font-w-9 c-theme">{{site.homepage_title}}</h1>
+				<h1 class="h0 font-w-9">{{site.homepage_headline}}</h1>
+				<h3 class="hero__desc s1 s34_m">{{site.homepage_description}}</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="social block-relative">
+	<div class="grid--m">
+		<ul class="social__links block c-w">
+			<li class="social__link inline-block"><a href="{{site.social_twitter}}" class="block icon-twitter h4"></a></li>
+			<li class="social__link inline-block"><a href="{{site.social_instagram}}" class="block icon-instagram h4"></a></li>
+			<li class="social__link inline-block"><a href="{{site.social_github}}" class="block icon-github h4"></a></li>
+			<li class="social__link inline-block"><a href="{{site.social_dribbble}}" class="block icon-dribbble h4"></a></li>
+		</ul>
+	</div>
+</section>
+<section class="work section">
+	<div class="grid--m has-gutter--m">
+		<div class="row">
+			<div class="section__title col s1"><h2 class="h4 font-w-9 c-g2">THINGS</h2></div>
+			<div class="work__block col s1 s12_m">
+				<h2 class="block__title h1"><a href="http://jekyllrb.com/" target="_blank">Built On Jekyll</a><span class="h5 c-theme font-w-9"> like the doctor</span></h2>
+				<p>Fast and easy to use. Spin up a blog in minutes.</p>
+				<span class="block__spacer bg-c-g1"></span>
+			</div>
+			<div class="work__block col s1 s12_m">
+				<h2 class="block__title h1"><a href="http://github.com/estrattonbailey/svbstrate" target="_blank">Made with Svbstrate</a><span class="h5 c-theme font-w-9"> SCSS</span></h2>
+				<p>A simple, scalable CSS base-layer.</p>
+				<span class="block__spacer bg-c-g1"></span>
+			</div>
+			<div class="work__block col s1 s12_m clear-l_m">
+				<h2 class="block__title h1"><a href="http://estrattonbailey.github.io/markd" target="_blank">Link to Your Work</a><span class="h5 c-theme font-w-9"> HIRE ME</span></h2>
+				<p>Links and descriptions. If you want to include portfolio work, create a post.</p>
+				<span class="block__spacer bg-c-g1"></span>
+			</div>
+			<div class="work__block col s1 s12_m">
+				<h2 class="block__title h1"><a href="http://estrattonbailey.github.io/markd" target="_blank">Customizable</a><span class="h5 c-theme font-w-9"> you are a snowflake</span></h2>
+				<p>A few basic customization features makes getting your site up and running a snap.</p>
+				<span class="block__spacer bg-c-g1"></span>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section bg-c-g1">
+	<div class="grid--m">
+		<div class="row">
+			<div class="section__title block"><h2 class="h4 font-w-9 c-g2"><a href="{{ site.url }}/{{site.permalink_base}}" class="breadcrumb__link">WORDS<span class="hidden-crumb"> – SEE MORE</span></a></h2></div>
+			{% for post in site.posts limit: 3 %}
+				{% include blog/posts__post.html %}
+			{% endfor %}
+		</div>
+	</section>
+</section>
+
+

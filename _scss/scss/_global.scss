@@ -1,0 +1,47 @@
+html, body {
+	height: 100%;
+}
+::-moz-selection { background: color(g1); color: color(theme) }
+::selection { background: color(g1); color: color(theme) }
+
+.section {
+	@extend .block;
+	padding: s(xl) 0;
+	@media (min-width: break(s)){
+		padding: s(xxl) 0;
+	}
+}
+.section--full {
+	@extend .section;
+	min-height: 100%;
+}
+.section__title {
+	margin: s(l) 0;
+}
+.block__title {
+	@extend .trans-c-s;
+	margin-bottom: s(s);
+	&:hover {
+		color: color(theme);
+	}
+}
+.block__spacer {
+	@extend .block;
+	@extend .s12;
+	height: 2px;
+	margin-top: s(l);
+}
+.breadcrumb__link {
+	@extend .trans-c-s;
+	&:hover {
+		color: color(theme);
+		.hidden-crumb {
+			opacity: 1;
+		}
+	}
+}
+.hidden-crumb {
+	@extend .trans-o-s;
+	color: color(g2);
+	opacity: 0;
+}

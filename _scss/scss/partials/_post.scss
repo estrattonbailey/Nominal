@@ -1,0 +1,18 @@
+.post {
+	margin-top: s(xl);
+
+	time {
+		@extend .block-relative;
+		margin-bottom: s(s);
+	}
+}
+.post__foot {
+	border-top: 1px solid white;
+	margin-top: s(xl);
+	padding: s(l) 0;
+}
+.post__img {
+	& + *:not(.post__img){
+		margin-top: s(l);
+	}
+}

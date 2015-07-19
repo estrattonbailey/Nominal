@@ -1,25 +1,38 @@
-# Site settings
-title: Gesso
-description: "A clean, simple Jekyll starter theme."
-email: estrattonbailey@gmail.com
-twitter_username: estrattonbailey
-github_username:  estrattonbailey
+# SITE SETTINGS
+homepage_title: Nominal
+homepage_headline: "A minimal Jekyll theme. Your blank slate."
+homepage_description: "Nominal is your blank slate. Use it to blog, as a basic portfolio, or to hack on to create something entirely different. It's built on <a href='http://github.com/estrattonbailey/svbstrate' target='_blank'>Svbstrate</a> and type-set in Open Sans and Georgia."
+# META
+site_title: Nominal | A Jekyll Theme
+site_author: estrattonbailey
+site_description: "Nominal is your blank slate. Use it to blog, as a basic portfolio, or to hack on to create something entirely different. It's built on <a href='http://github.com/estrattonbailey/svbstrate' target='_blank'>Svbstrate</a> and type-set in Open Sans and Georgia."
+site_keywords: 'responsive, minimal, jekyll theme, clean, fast, elegant, design, portfolio, jekyll, blog'
+# CUSTOMIZE 
+color_theme: nominal # only one theme right now, sry
+# SOCIAL
+social_twitter: http://twitter.com/estrattonbailey
+social_instagram: http://instagram.com/estrattonbailey
+social_github: http://github.com/estrattonbailey
+social_dribbble: http://dribbble.com/estrattonbailey
 
-keywords: "responsive, jekyll theme"
 
+# JEKYLL - Misc
+#
 # Web Server Settings
 url: "http://localhost:4000"
-# url: "http://estrattonbailey.com"
+# url: "http://estrattonbailey.github.io/Nominal" # Change this to match your domain namee
 
 # Hide these files from jekyll build process.
-exclude: [README.md, scss/, raw/, style.css.map]
-
-# Pagination settings.
+exclude: [README.md]
+# Blog pagination settings.
 paginate: 8
-paginate_path: writings/page-:num
-
+paginate_path: words/page-:num
 # Permalink setting for posts.
-permalink: writings/:title
-
+permalink: words/:title
+permalink_base: words/
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+# Sass Settings
+sass:
+  sass_dir: _scss
+  style: :compact

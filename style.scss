@@ -1,0 +1,19 @@
+---
+# This stylesheet will be compiled to the _site folder
+---
+// Svbstrate
+@import "scss/settings";
+@import "node_modules/svbstrate/svbstrate";
+@import "node_modules/svbstrate/extras/align";
+
+// Styles
+@import "scss/global";
+@import "scss/partials/index";
+@import "scss/partials/icons";
+@import "scss/partials/posts";
+@import "scss/partials/post";
+@import "scss/partials/pagination";
+@import "scss/partials/footer";
+
+// Jekyll
+@import "scss/inc/syntax-highlighting";
